@@ -7,3 +7,6 @@ function stray(numbers) {
   if (third > second) return third;
   return stray(numbers);
 }
+
+// better solution
+const stray = (numbers) => numbers.reduce((a, b) => a ^ b);
